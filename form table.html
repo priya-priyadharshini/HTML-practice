@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+<center>
+    <h1 style="background-color:#f0f0f0;">My Website</h1>
+    <hr>
+
+    <!-- Navigation -->
+    <nav align="right">
+        <a href="#home">Home</a> &nbsp;&nbsp;
+        <a href="#about">About</a> &nbsp;&nbsp;
+        <a href="#registration">Register</a> &nbsp;&nbsp;
+        <a href="#contact">Contact</a> &nbsp;&nbsp;
+        
+    </nav>
+</center>
+
+    <center>
+    <h2 id="home">Home</h2>
+    <p style="width:60%;">
+        Welcome to the Home section.  
+        This is a simple single-page website created using pure HTML.
+        Clicking the navigation links will scroll to the respective sections.
+    </p>
+</center>
+
+<br><br><hr>
+
+<!-- ABOUT SECTION -->
+<center>
+    <h2 id="about">About</h2>
+    <p style="width:60%; text-align:justify;">
+        This page demonstrates internal page navigation using anchor links.
+        It contains Home, About, and Contact sections on the same page.
+        <br><br>
+        This is useful for portfolios, landing pages, and simple websites.
+    </p>
+</center>
+
+<br><br><hr>
+
+<center>
+    <h2 id="registration">Registeration</h2>
+    <form action="/submit" method="post">
+        <table cellpadding="10">
+            <tr>
+                <td><b>Name:</b></td>
+                <td><input type="text" placeholder="Enter your name"></td>
+            </tr>
+
+            <tr>
+                <td><b>Phone Number:</b></td>
+                <td><input type="tel" placeholder="Enter your phone number"></td>
+            </tr>
+
+            <tr>
+                <td><b>Email:</b></td>
+                <td><input type="email" placeholder="Enter your email"></td>
+            </tr>
+
+            <tr>
+                <td><b>Date of Birth:</b></td>
+                <td><input type="date"></td>
+            </tr>
+
+            <tr>
+                <td><b>Address:</b></td>
+                <td><textarea rows="4" cols="30" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>College / University:</b></td>
+                <td>
+                    <select>
+                        <option value="">Select your college/university</option>
+                        <option value="srm">SRM</option>
+                        <option value="sastra">SASTRA</option>
+                        <option value="anna">ANNA</option>
+                        <option value="mit">MIT</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><b>Course:</b></td>
+                <td>
+                    <select>
+                        <option value="" disabled selected>Select your course</option>
+                        <option value="bca">BCA</option>
+                        <option value="bcom">BCOM</option>
+                        <option value="bsc">BSC</option>
+                        <option value="ba">BA</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+
+<br><br>
+<hr>
+<!-- CONTACT SECTION -->
+<center>
+    <h2 id="contact">Contact</h2>
+
+        <p>
+            <b>Address</b><br>
+            123, Anna Nagar,<br>
+            Madurai,<br>
+            Tamil Nadu – 625020
+        </p>
+
+        <p>
+            <b>Phone</b><br>
+            <a href="tel:+919876543210" >
+                +91 98765 43210
+            </a>
+        </p>
+
+        <p>
+            <b>Email</b><br>
+            <a href="mailto:contact@example.com">
+                contact@example.com
+            </a>
+        </p>
+
+    </div>
+</center>
+
+
+</body>
+</html>
