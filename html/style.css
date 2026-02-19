@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  background: #1e1b4b; /* Elegant Dark Purple */
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00;
+  letter-spacing: 1px;
+}
+
+/* Search */
+.search-box {
+  display: flex;
+  width: 45%;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-box input {
+  width: 85%;
+  border: none;
+  padding: 12px 18px;
+  outline: none;
+  font-size: 15px;
+  
+}
+
+.search-box button {
+  width: 15%;
+  border: none;
+  background: #ffcc00;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Links */
+.nav-links a {
+  color: white;
+  margin-left: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  
+}
+
+.nav-links a:hover {
+  color: #f8fc00;
+}
+
+/* Categories */
+.categories {
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 15px;
+  font-weight: 600;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+.cat {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cat:hover {
+  color: #1e1b4b;
+}
+
+/* Hero Banner */
+.hero {
+  margin: 25px auto;
+  width: 90%;
+  padding: 60px;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(to right, #1e1b4b, #312e81);
+  color: white;
+}
+
+
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  background: #ffcc00;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: white;
+  color: #1e1b4b;
+}
+
+/* Products */
+.products {
+  padding: 40px 60px;
+}
+
+.products h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #1e1b4b;
+}
+
+/* Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  
+   
+}
+
+/* Card */
+.card {
+  background: white;
+  width: 240px;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.12);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translatey(-20px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin: 15px 0 8px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.card button {
+  margin-top: 12px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #1e1b4b;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: #ffcc00;
+  color: #1e1b4b;
+}
+
+/* Footer */
+.footer {
+  background: #1e1b4b;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
+.card img {
+  height: 180px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Offers Slider Section */
+.offers {
+  margin: 30px auto;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Slider Box */
+.offer-slider {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+}
+
+/* Moving Track */
+.offer-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 18s linear infinite;
+}
+
+/* Images */
+.offer-track img {
+  width: 600px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
